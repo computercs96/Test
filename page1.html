@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Welcome to the Graduation Ceramony</title>
+	  <link rel="stylesheet" type="text/css" href="mystyle.css">
+   </head>
+
+   <body>
+      <h1>Welcome to the Graduation Ceramony</h1>
+      
+
+      <form method = "post" autocomplete = "on">
+         <p>
+            <label>Choose your favorite Color:
+               <input type = "color" id = "color" /> 
+                  (Hexadecimal code such as #ADD8E6)
+            </label>
+         </p>
+         <p>
+            <label>Celebration date :
+               <input type = "date" id = "date" /> 
+                  (date input)
+            </label>
+         </p>
+        
+         <p>
+            <label>Accurate Graduation Date!(LocalTime):
+               <input type = "datetime-local" id = "local" /> 
+                  (datetime-local input)
+            </label>
+         </p>
+         
+         <p>
+            <label>Your summer vacation stars in :
+               <input type = "month" id = "month" /> (yyyy-mm)
+            </label>
+         </p>
+		 <h1 class ="SF">Accepting the invitation</h1>
+         <ul>
+            <li>
+          <label>  Your Email:</label>
+               <input type = "email" placeholder = "user@uod.edu.sa" 
+                  id = "email" /> 
+           
+         </li>
+            <li><label>Your mobile No:</label>
+               <input type = "tel" id = "tel" placeholder = "+(966)##-###-####" 
+                  pattern = "[\+][\(]\d{3}[\)]\d{2}[\-]\d{3}[\-]\d{4}" required /> 
+                 
+           
+         </li>
+        <p>
+            <input type = "text" id = "txtList" 
+               placeholder = "Select a hall" list = "hall" />
+            <datalist id = "hall">
+               <option value = "Main Hall">
+               <option value = "Green Hall">
+               <option value = "Official Hall">
+               
+            </datalist>
+         </p>
+         <p>
+            <input type = "submit" value = "Submit" />
+            <input type = "reset" value = "Clear" />
+         </p>   
+      </form>
+   </body>
+</html>
